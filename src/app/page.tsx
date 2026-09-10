@@ -16,6 +16,7 @@ const FOCUS =
   "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--ring-offset)]";
 
 const SHELL = "mx-auto w-full max-w-6xl px-4 md:px-8";
+const PUBLIC_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const profile = {
   name: "Erik Kleer",
@@ -143,7 +144,7 @@ function PreviewFrame({ src, title }: { src: string; title: string }) {
       {hasImage ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={src}
+          src={`${PUBLIC_BASE_PATH}${src}`}
           alt={`${title} preview`}
           loading="lazy"
           decoding="async"

@@ -57,14 +57,19 @@ The theme toggle stores the selected preference in the browser and follows the o
 
 ## Deployment
 
-The app can be deployed to Vercel or another platform that supports Next.js. Build it with:
+The app is configured for GitHub Pages through GitHub Actions. Push to `main` to
+build and deploy the static export automatically.
+
+The site will be available at:
+
+`https://erikkleer.github.io/portifolio/`
+
+To build the static export locally:
 
 ```bash
 npm run build
 ```
 
-Then serve the result with:
+The generated files are written to `out/`. To test the production output locally,
+serve that directory with a static file server.
 
-```bash
-npm run start
-```
