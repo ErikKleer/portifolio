@@ -1,0 +1,59 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="background" x1="64" y1="40" x2="1216" y2="680" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#082F49"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#A5F3FC"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FDE68A"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#020617" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" rx="28" fill="url(#background)"/>
+  <circle cx="1090" cy="90" r="220" fill="#22D3EE" fill-opacity="0.1"/>
+  <circle cx="170" cy="680" r="240" fill="#F59E0B" fill-opacity="0.08"/>
+  <path d="M0 560C210 470 320 620 540 548C760 476 918 548 1280 420" stroke="#38BDF8" stroke-opacity="0.12" stroke-width="2"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="640" cy="320" r="142" fill="#0B2538" stroke="url(#cyan)" stroke-width="6"/>
+    <circle cx="640" cy="320" r="104" fill="#0EA5E9" fill-opacity="0.14"/>
+    <path d="M640 228L702 252V310C702 350 677 385 640 404C603 385 578 350 578 310V252L640 228Z" fill="url(#cyan)" fill-opacity="0.22" stroke="#A5F3FC" stroke-width="5"/>
+    <path d="M610 318L632 340L672 292" stroke="#ECFEFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="640" y="500" text-anchor="middle" fill="#E0F2FE" font-family="Arial, sans-serif" font-size="28" font-weight="700">SERVERLESS CONTROL</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="238" width="300" height="182" rx="26" fill="#102F45" stroke="#67E8F9" stroke-opacity="0.75" stroke-width="4"/>
+    <rect x="112" y="278" width="220" height="76" rx="14" fill="#061A2B"/>
+    <rect x="136" y="300" width="78" height="11" rx="5.5" fill="#67E8F9"/>
+    <rect x="136" y="328" width="138" height="10" rx="5" fill="#31566A"/>
+    <text x="222" y="397" text-anchor="middle" fill="#CFFAFE" font-family="Arial, sans-serif" font-size="25" font-weight="700">WEB DASHBOARD</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="908" y="238" width="300" height="182" rx="26" fill="#102F45" stroke="#FBBF24" stroke-opacity="0.8" stroke-width="4"/>
+    <rect x="986" y="270" width="144" height="68" rx="15" fill="#78350F" fill-opacity="0.5" stroke="#FCD34D" stroke-width="4"/>
+    <path d="M1022 304H1094M1058 280V328" stroke="#FDE68A" stroke-width="9" stroke-linecap="round"/>
+    <text x="1058" y="397" text-anchor="middle" fill="#FEF3C7" font-family="Arial, sans-serif" font-size="25" font-weight="700">EC2 MINECRAFT</text>
+  </g>
+
+  <path d="M352 328H510" stroke="#67E8F9" stroke-width="5" stroke-dasharray="12 12"/>
+  <path d="M495 311L520 328L495 345" stroke="#67E8F9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M770 328H928" stroke="#FCD34D" stroke-width="5" stroke-dasharray="12 12"/>
+  <path d="M913 311L938 328L913 345" stroke="#FCD34D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g transform="translate(360 610)">
+    <circle cx="0" cy="0" r="12" fill="#34D399"/>
+    <text x="28" y="9" fill="#A7F3D0" font-family="Arial, sans-serif" font-size="25" font-weight="700">START ON DEMAND</text>
+    <circle cx="390" cy="0" r="12" fill="#FBBF24"/>
+    <text x="418" y="9" fill="#FDE68A" font-family="Arial, sans-serif" font-size="25" font-weight="700">AUTO-SHUTDOWN</text>
+  </g>
+</svg>
