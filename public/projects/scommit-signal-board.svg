@@ -1,0 +1,32 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="160" y1="80" x2="1110" y2="680" gradientUnits="userSpaceOnUse"><stop stop-color="#321B3B"/><stop offset="0.48" stop-color="#111827"/><stop offset="1" stop-color="#020617"/></linearGradient>
+    <linearGradient id="signal" x1="260" y1="530" x2="1050" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#38BDF8"/><stop offset="0.4" stop-color="#C084FC"/><stop offset="0.72" stop-color="#F9A8D4"/><stop offset="1" stop-color="#FDE68A"/></linearGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1280" height="720" rx="28" fill="url(#bg)"/>
+  <g fill="#E0F2FE"><circle cx="106" cy="116" r="2"/><circle cx="226" cy="206" r="1.5"/><circle cx="1120" cy="108" r="2"/><circle cx="1180" cy="570" r="1.5"/><circle cx="1018" cy="646" r="2"/></g>
+  <path d="M82 542C250 542 254 214 424 214C590 214 584 526 750 526C920 526 930 202 1190 202" stroke="#67E8F9" stroke-opacity="0.25" stroke-width="24" filter="url(#glow)"/>
+  <path d="M82 542C250 542 254 214 424 214C590 214 584 526 750 526C920 526 930 202 1190 202" stroke="url(#signal)" stroke-width="5" stroke-dasharray="14 14"/>
+  <g stroke-linecap="round">
+    <path d="M176 188H272M204 208H272M226 228H272" stroke="#67E8F9" stroke-width="5" opacity="0.16"/>
+    <path d="M432 412H524M458 432H524M480 452H524" stroke="#C4B5FD" stroke-width="5" opacity="0.16"/>
+    <path d="M680 188H776M706 208H776M728 228H776" stroke="#F9A8D4" stroke-width="5" opacity="0.16"/>
+    <path d="M214 278H272M232 292H272" stroke="#67E8F9" stroke-width="3" opacity="0.3"/>
+    <path d="M470 502H524M486 516H524" stroke="#C4B5FD" stroke-width="3" opacity="0.3"/>
+    <path d="M718 278H776M734 292H776" stroke="#F9A8D4" stroke-width="3" opacity="0.3"/>
+  </g>
+  <g filter="url(#glow)"><rect x="286" y="158" width="210" height="160" rx="22" fill="#0B2538" stroke="#67E8F9" stroke-width="4"/><rect x="538" y="386" width="210" height="160" rx="22" fill="#172554" stroke="#C4B5FD" stroke-width="4"/><rect x="790" y="158" width="210" height="160" rx="22" fill="#321B3B" stroke="#F9A8D4" stroke-width="4"/></g>
+  <g stroke-linecap="round"><path d="M326 224H448M326 260H412" stroke="#67E8F9" stroke-width="12"/><path d="M578 452H698M578 488H664" stroke="#C4B5FD" stroke-width="12"/><path d="M830 224H952M830 260H916" stroke="#F9A8D4" stroke-width="12"/></g>
+  <g fill="#FDE68A" filter="url(#glow)"><circle cx="456" cy="238" r="11"/><circle cx="708" cy="466" r="11"/><circle cx="962" cy="238" r="11"/></g>
+  <path d="M496 238H538M748 466H790" stroke="#FDE68A" stroke-width="4" stroke-dasharray="8 10"/>
+  <g transform="translate(52 504)">
+    <rect x="7" y="10" width="34" height="27" rx="4" fill="#0B2538" stroke="#67E8F9" stroke-width="4"/>
+    <path d="M15 18L21 23L15 28M25 28H33" stroke="#A5F3FC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="54" y="33" fill="#CFFAFE" font-family="Arial, sans-serif" font-size="28" font-weight="700">LOCAL CLI</text>
+    <circle cx="24" cy="86" r="13" fill="#34D399"/>
+    <text x="54" y="95" fill="#A7F3D0" font-family="Arial, sans-serif" font-size="28" font-weight="700">STRUCTURED OUTPUTS</text>
+    <circle cx="24" cy="148" r="13" fill="#FBBF24"/>
+    <text x="54" y="157" fill="#FDE68A" font-family="Arial, sans-serif" font-size="28" font-weight="700">1-5 RISK RATING</text>
+  </g>
+</svg>
