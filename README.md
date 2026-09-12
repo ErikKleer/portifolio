@@ -35,11 +35,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Available commands
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Starts the development server. |
+| Command         | Description                                                      |
+| --------------- | ---------------------------------------------------------------- |
+| `npm run dev`   | Starts the development server.                                   |
 | `npm run build` | Creates the optimized production build and validates TypeScript. |
-| `npm run start` | Serves the production build locally. |
 
 ## Project content
 
@@ -71,5 +70,8 @@ npm run build
 ```
 
 The generated files are written to `out/`. To test the production output locally,
-serve that directory with a static file server.
+serve that directory with a static file server. For example:
 
+```bash
+npx serve out
+```
