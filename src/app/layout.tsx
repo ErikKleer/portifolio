@@ -15,20 +15,18 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Erik Bassi Kleer, Full-Stack Developer",
-  description:
-    "Portfolio of Erik Bassi Kleer, a full-stack developer working with TypeScript, React, Java, Python, AWS, and Docker.",
-  openGraph: {
-    title: "Erik Bassi Kleer, Full-Stack Developer",
-    description:
-      "Portfolio of Erik Bassi Kleer, a full-stack developer working with TypeScript, React, Java, Python, AWS, and Docker.",
-    type: "website",
+  title: "Erik Kleer | AI, Cloud & Automation",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
   },
-  twitter: {
-    card: "summary",
-    title: "Erik Bassi Kleer, Full-Stack Developer",
+  description:
+    "Portfolio of Erik Bassi Kleer, a software developer building AI-powered products, cloud workflows, and developer tools with TypeScript, React, Java, Python, AWS, and Docker.",
+  openGraph: {
+    title: "Erik Kleer | AI, Cloud & Automation",
     description:
-      "Portfolio of Erik Bassi Kleer, a full-stack developer working with TypeScript, React, Java, Python, AWS, and Docker.",
+      "Portfolio of Erik Bassi Kleer, a software developer building AI-powered products, cloud workflows, and developer tools with TypeScript, React, Java, Python, AWS, and Docker.",
+    type: "website",
   },
 };
 

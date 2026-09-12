@@ -20,9 +20,9 @@ const PUBLIC_BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 const profile = {
   name: "Erik Kleer",
-  headline: "Full-Stack Developer",
+  headline: "Software Developer focused on AI, Cloud & Automation",
   summary:
-    "Full-stack developer building practical products, developer tooling, and cloud workflows with TypeScript, React, Java, Python, and AWS.",
+    "Full-stack developer building AI-powered products, developer tooling, and cloud workflows with TypeScript, React, Java, Python, and AWS.",
   email: "erikbkleer@gmail.com",
   github: "https://github.com/erikkleer",
   linkedin: "https://www.linkedin.com/in/erikkleer",
@@ -62,6 +62,16 @@ const projects: Project[] = [
     demoUrl: "",
     repoUrl: "https://github.com/ErikKleer/projeto-vortice-aws",
     featured: true,
+  },
+  {
+    id: "scommit",
+    title: "SCOMMIT: AI-Powered Git Commit Assistant",
+    synopsis:
+      "A TypeScript CLI that analyzes staged diffs to generate Conventional Commits, structured pull request summaries, and a 1-to-5 risk score, with review-friendly dry runs and explicit commit actions.",
+    tags: ["TypeScript", "Node.js", "Zod", "LLMs", "DevTools", "CLI"],
+    previewImage: "/projects/scommit-signal-board.svg",
+    demoUrl: "",
+    repoUrl: "https://github.com/ErikKleer/scommit",
   },
 ];
 
@@ -162,18 +172,11 @@ function PreviewFrame({ src, title }: { src: string; title: string }) {
 function ProjectLink({
   href,
   label,
-  variant,
 }: {
   href: string;
   label: string;
-  variant: "primary" | "secondary";
 }) {
   const base = `inline-flex min-h-10 items-center rounded-full px-4 text-sm font-medium transition ${FOCUS}`;
-
-  const style =
-    variant === "primary"
-      ? "bg-[var(--accent)] text-[var(--accent-contrast)] hover:brightness-110 active:scale-[0.98]"
-      : "border border-slate-300/80 text-slate-700 hover:border-slate-400 hover:bg-white/70 active:scale-[0.98] dark:border-white/15 dark:text-zinc-200 dark:hover:border-white/25 dark:hover:bg-white/[0.06]";
 
   if (href.trim().length === 0 || href === "#") {
     return (
@@ -192,7 +195,7 @@ function ProjectLink({
       href={href}
       target="_blank"
       rel="noreferrer noopener"
-      className={`${base} ${style}`}
+      className={`${base} bg-[var(--accent)] text-[var(--accent-contrast)] hover:brightness-110 active:scale-[0.98]`}
     >
       {label}
     </a>
@@ -236,8 +239,10 @@ function ProjectCard({ project }: { project: Project }) {
         </ul>
 
         <div className="mt-auto flex flex-wrap gap-2 pt-1">
-          <ProjectLink href={project.demoUrl} label="Live demo" variant="primary" />
-          <ProjectLink href={project.repoUrl} label="Source" variant="secondary" />
+          {project.demoUrl.trim().length > 0 ? (
+            <ProjectLink href={project.demoUrl} label="Live demo" />
+          ) : null}
+          <ProjectLink href={project.repoUrl} label="Source" />
         </div>
       </div>
     </article>
@@ -501,7 +506,7 @@ export default function Home() {
           className={`${SHELL} flex flex-wrap items-center justify-between gap-x-4 gap-y-3 py-10 text-sm`}
         >
           <p className="min-w-0 text-slate-600 dark:text-zinc-400">
-            {profile.name}. Open to full-stack opportunities.
+            {profile.name}. Open to opportunities.
           </p>
 
           <nav aria-label="Contact">
