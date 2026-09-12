@@ -14,11 +14,13 @@ const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
 });
 
+const publicBasePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const metadata: Metadata = {
   title: "Erik Kleer | AI, Cloud & Automation",
   icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
+    icon: `${publicBasePath}/icon.png`,
+    shortcut: `${publicBasePath}/icon.png`,
   },
   description:
     "Portfolio of Erik Bassi Kleer, a software developer building AI-powered products, cloud workflows, and developer tools with TypeScript, React, Java, Python, AWS, and Docker.",
