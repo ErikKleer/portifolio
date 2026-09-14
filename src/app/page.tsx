@@ -26,7 +26,6 @@ const profile = {
   email: "erikbkleer@gmail.com",
   github: "https://github.com/erikkleer",
   linkedin: "https://www.linkedin.com/in/erikkleer",
-  portraitImage: "",
 };
 
 interface NavItem {
@@ -323,63 +322,36 @@ export default function Home() {
 
       <main id="main" className="relative z-10">
         <section className={`${SHELL} flex min-h-[100dvh] items-center pt-24 pb-16`}>
-          <div className="grid w-full items-center gap-10 md:grid-cols-[1.15fr_0.85fr] md:gap-14">
-            <div>
-              <h1
-                className="reveal max-w-[16ch] text-4xl leading-[1.06] font-medium tracking-tight text-balance md:text-5xl lg:text-6xl"
-                style={{ animationDelay: "60ms" }}
-              >
-                {profile.headline}
-              </h1>
-              <p
-                className="reveal mt-6 max-w-[52ch] text-base leading-relaxed text-slate-600 md:text-lg dark:text-zinc-400"
-                style={{ animationDelay: "160ms" }}
-              >
-                {profile.summary}
-              </p>
-              <div
-                className="reveal mt-8 flex flex-wrap gap-3"
-                style={{ animationDelay: "260ms" }}
-              >
-                <a
-                  href="#work"
-                  className={`inline-flex min-h-11 items-center rounded-full bg-[var(--accent)] px-5 text-sm font-medium text-[var(--accent-contrast)] transition hover:brightness-110 active:scale-[0.98] ${FOCUS}`}
-                >
-                  View projects
-                </a>
-                <a
-                  href={`mailto:${profile.email}`}
-                  data-glass
-                  className={`${GLASS} inline-flex min-h-11 items-center rounded-full px-5 text-sm font-medium transition hover:-translate-y-0.5 active:scale-[0.98] ${FOCUS}`}
-                >
-                  Email me
-                </a>
-              </div>
-            </div>
-
-            <div
-              data-glass
-              className={`${GLASS} reveal rounded-2xl p-3`}
-              style={{ animationDelay: "360ms" }}
+          <div className="w-full max-w-3xl">
+            <h1
+              className="reveal max-w-[16ch] text-4xl leading-[1.06] font-medium tracking-tight text-balance md:text-5xl lg:text-6xl"
+              style={{ animationDelay: "60ms" }}
             >
-              <div className="relative aspect-[4/5] max-h-[58dvh] w-full overflow-hidden rounded-xl bg-slate-100 dark:bg-zinc-950/60">
-                <div
-                  aria-hidden
-                  className="absolute inset-0 bg-[radial-gradient(120%_100%_at_20%_0%,var(--accent-soft),transparent_65%)]"
-                />
-                {profile.portraitImage ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={profile.portraitImage}
-                    alt={`Portrait of ${profile.name}`}
-                    className="relative h-full w-full object-cover"
-                  />
-                ) : (
-                  <p className="relative flex h-full items-center justify-center px-8 text-center text-sm text-slate-500 dark:text-zinc-500">
-                    Portrait image coming soon.
-                  </p>
-                )}
-              </div>
+              {profile.headline}
+            </h1>
+            <p
+              className="reveal mt-6 max-w-[52ch] text-base leading-relaxed text-slate-600 md:text-lg dark:text-zinc-400"
+              style={{ animationDelay: "160ms" }}
+            >
+              {profile.summary}
+            </p>
+            <div
+              className="reveal mt-8 flex flex-wrap gap-3"
+              style={{ animationDelay: "260ms" }}
+            >
+              <a
+                href="#work"
+                className={`inline-flex min-h-11 items-center rounded-full bg-[var(--accent)] px-5 text-sm font-medium text-[var(--accent-contrast)] transition hover:brightness-110 active:scale-[0.98] ${FOCUS}`}
+              >
+                View projects
+              </a>
+              <a
+                href={`mailto:${profile.email}`}
+                data-glass
+                className={`${GLASS} inline-flex min-h-11 items-center rounded-full px-5 text-sm font-medium transition hover:-translate-y-0.5 active:scale-[0.98] ${FOCUS}`}
+              >
+                Email me
+              </a>
             </div>
           </div>
         </section>
