@@ -72,6 +72,16 @@ const projects: Project[] = [
     demoUrl: "",
     repoUrl: "https://github.com/ErikKleer/scommit",
   },
+  {
+    id: "gen-te",
+    title: "GEN-TE: Autonomous TypeScript Test Generation",
+    synopsis:
+      "A local CLI that extracts exported TypeScript functions, generates focused Vitest suites with Gemini, runs them, and repairs failures through a bounded feedback loop.",
+    tags: ["TypeScript", "Gemini", "Vitest", "AST", "Node.js", "CLI"],
+    previewImage: "/projects/gen-te-test-loop.svg",
+    demoUrl: "",
+    repoUrl: "https://github.com/ErikKleer/gen-te",
+  },
 ];
 
 interface StackGroup {
